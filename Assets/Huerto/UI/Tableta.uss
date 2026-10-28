@@ -1,0 +1,99 @@
+/* Tableta del gemelo digital del huerto */
+.raiz { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+.fondo { flex-grow: 1; background-color: rgba(10, 12, 8, 0.35); align-items: center; justify-content: center; }
+.tableta {
+    width: 1560px; height: 940px; padding: 26px 34px; border-radius: 42px;
+    background-color: rgb(28, 29, 31); border-width: 3px; border-color: rgb(70, 72, 76);
+}
+.camara-frontal { position: absolute; left: 12px; top: 50%; width: 9px; height: 9px; border-radius: 5px; background-color: rgb(55, 60, 70); }
+.pantalla { flex-grow: 1; border-radius: 16px; background-color: rgb(246, 243, 235); overflow: hidden; }
+
+.barra { flex-direction: row; align-items: center; padding: 12px 18px; background-color: rgb(52, 78, 50); }
+.marca { flex-direction: column; margin-right: 24px; }
+.marca-titulo { color: rgb(250, 246, 232); font-size: 22px; -unity-font-style: bold; }
+.marca-sub { color: rgb(196, 214, 186); font-size: 13px; }
+.fecha { color: rgb(255, 250, 235); font-size: 22px; -unity-font-style: bold; flex-grow: 1; -unity-text-align: middle-center; }
+.reloj { flex-direction: row; }
+.velocidad { color: rgb(220, 230, 210); font-size: 13px; width: 100px; -unity-text-align: middle-right; }
+
+.boton {
+    background-color: rgb(236, 230, 214); color: rgb(40, 44, 36); border-width: 0; border-radius: 8px;
+    padding: 6px 10px; margin: 0 2px; font-size: 14px;
+}
+.boton:hover { background-color: rgb(255, 250, 236); }
+.boton:active { background-color: rgb(205, 196, 172); }
+.boton-aviso { background-color: rgb(196, 98, 76); color: white; border-width: 0; border-radius: 8px; padding: 6px 12px; margin: 0 3px; font-size: 14px; }
+
+.cuerpo { flex-direction: row; flex-grow: 1; }
+.lista { width: 330px; padding: 10px; background-color: rgb(234, 229, 216); }
+.tarjeta { flex-direction: row; flex-shrink: 0; margin-bottom: 7px; border-radius: 10px; background-color: rgb(250, 248, 242); overflow: hidden; border-width: 2px; border-color: rgba(0,0,0,0); }
+.tarjeta:hover { background-color: rgb(255, 255, 252); }
+.tarjeta-sel { border-color: rgb(52, 78, 50); background-color: rgb(255, 255, 252); }
+.tarjeta-color { width: 8px; }
+.tarjeta-cuerpo { flex-grow: 1; padding: 5px 10px 7px 10px; }
+.tarjeta-titulo { font-size: 16px; color: rgb(30, 34, 28); }
+.tarjeta-sub { font-size: 12px; color: rgb(80, 86, 74); }
+.tarjeta-clima { font-size: 11px; color: rgb(120, 116, 100); -unity-font-style: italic; }
+.tarjeta-alerta { font-size: 11px; color: rgb(170, 70, 40); }
+.mini-barra { height: 5px; margin-top: 3px; border-radius: 3px; background-color: rgb(222, 216, 200); overflow: hidden; }
+.barra-desarrollo { height: 100%; background-color: rgb(150, 116, 64); }
+.barra-salud { height: 100%; background-color: rgb(70, 160, 90); }
+.barra-salud-media { height: 100%; background-color: rgb(220, 170, 50); }
+.barra-salud-baja { height: 100%; background-color: rgb(200, 70, 50); }
+
+.detalle { flex-grow: 1; padding: 10px 18px; }
+.pestanas { flex-direction: row; margin-bottom: 8px; }
+.pestana { background-color: rgba(0,0,0,0); border-width: 0; border-bottom-width: 3px; border-color: rgba(0,0,0,0); border-radius: 0; font-size: 17px; color: rgb(100, 104, 92); padding: 6px 16px; }
+.pestana-sel { border-color: rgb(52, 78, 50); color: rgb(30, 40, 28); -unity-font-style: bold; }
+.contenido { flex-grow: 1; }
+
+.cabecera { flex-direction: row; align-items: center; }
+.punto { width: 16px; height: 16px; border-radius: 8px; margin-right: 10px; }
+.titulo { font-size: 26px; -unity-font-style: bold; color: rgb(30, 34, 28); }
+.subtitulo { font-size: 14px; color: rgb(96, 100, 88); margin-bottom: 10px; white-space: normal; }
+.datos { flex-direction: row; flex-wrap: wrap; }
+.dato { width: 31%; margin: 0 1.5% 10px 0; padding: 10px 14px; border-radius: 12px; background-color: rgb(255, 255, 251); border-width: 1px; border-color: rgb(226, 220, 204); }
+.dato-titulo { font-size: 13px; color: rgb(110, 112, 98); }
+.dato-valor { font-size: 28px; -unity-font-style: bold; color: rgb(34, 52, 32); }
+.dato-nota { font-size: 12px; color: rgb(130, 128, 112); }
+
+.fases { flex-direction: row; flex-wrap: wrap; margin: 4px 0 10px 0; }
+.fase { padding: 4px 10px; margin: 0 6px 6px 0; border-radius: 14px; background-color: rgb(230, 226, 214); }
+.fase-texto { font-size: 13px; color: rgb(110, 110, 100); }
+.fase-hecha { background-color: rgb(200, 222, 196); }
+.fase-actual { background-color: rgb(52, 78, 50); }
+.fase-actual .fase-texto { color: white; -unity-font-style: bold; }
+
+.dos-columnas { flex-direction: row; }
+.panel { flex-grow: 1; flex-basis: 0; margin-right: 12px; padding: 10px 14px; border-radius: 12px; background-color: rgb(255, 255, 251); border-width: 1px; border-color: rgb(226, 220, 204); }
+.panel-titulo { font-size: 15px; -unity-font-style: bold; color: rgb(52, 78, 50); margin-bottom: 4px; }
+.linea { font-size: 14px; color: rgb(50, 54, 46); white-space: normal; margin-bottom: 2px; }
+
+.acciones { flex-direction: row; flex-wrap: wrap; align-items: center; margin-top: 10px; }
+.interruptor { margin-left: 14px; }
+.interruptor Label { font-size: 14px; color: rgb(40, 44, 36); min-width: 0; }
+.desplegable { min-width: 360px; margin-right: 10px; }
+.desplegable Label { font-size: 14px; color: rgb(40, 44, 36); min-width: 140px; }
+.ajustes { margin-top: 8px; }
+.ajuste { flex-direction: row; align-items: center; margin-bottom: 4px; }
+.deslizador { flex-grow: 1; }
+.deslizador Label { font-size: 14px; color: rgb(40, 44, 36); min-width: 170px; }
+.ajuste-valor { width: 70px; font-size: 15px; -unity-font-style: bold; -unity-text-align: middle-right; color: rgb(34, 52, 32); }
+
+.grafica { height: 210px; margin: 8px 0; border-radius: 12px; background-color: rgb(255, 255, 251); border-width: 1px; border-color: rgb(226, 220, 204); }
+.grafica-grande { height: 270px; }
+.grafica-titulo { position: absolute; left: 12px; top: 6px; font-size: 14px; -unity-font-style: bold; color: rgb(52, 78, 50); }
+.grafica-leyenda { position: absolute; right: 12px; top: 6px; font-size: 12px; color: rgb(80, 84, 72); }
+.grafica-eje-izq { position: absolute; left: 4px; top: 24px; font-size: 11px; color: rgb(120, 120, 108); }
+.grafica-eje-der { position: absolute; right: 4px; top: 24px; font-size: 11px; color: rgb(120, 120, 108); }
+.grafica-eje-x0 { position: absolute; left: 44px; bottom: 2px; font-size: 11px; color: rgb(120, 120, 108); }
+.grafica-eje-x1 { position: absolute; right: 44px; bottom: 2px; font-size: 11px; color: rgb(120, 120, 108); }
+
+.tabla { border-radius: 12px; background-color: rgb(255, 255, 251); border-width: 1px; border-color: rgb(226, 220, 204); padding: 4px 8px; }
+.tabla-fila { flex-direction: row; border-bottom-width: 1px; border-color: rgb(236, 232, 220); padding: 5px 0; align-items: center; }
+.tabla-cabecera .tabla-celda { -unity-font-style: bold; color: rgb(52, 78, 50); }
+.tabla-celda { flex-grow: 1; flex-basis: 0; font-size: 13px; color: rgb(40, 44, 36); white-space: normal; padding-right: 8px; overflow: hidden; }
+
+.pie { flex-direction: row; align-items: center; padding: 8px 18px; background-color: rgb(234, 229, 216); }
+.pie-ayuda { font-size: 13px; color: rgb(110, 110, 100); }
+.pie-mensaje { flex-grow: 1; font-size: 13px; color: rgb(52, 78, 50); -unity-text-align: middle-center; }

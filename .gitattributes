@@ -171,9 +171,8 @@ Packages/packages-lock.json linguist-generated
 LightingData.asset     binary
 
 # Datos binarios de Unity (terrenos e iluminacion): por LFS y sin convertir finales de linea
-Assets/TerrainData_*.asset                  lfs
-Assets/New[[:space:]]Terrain.asset          lfs
-Assets/TerrenoOriginal/*.asset              lfs
+Assets/Lago_Nevado/Terreno/*.asset          lfs
+Assets/Lago_Nevado/Terreno/Original/*.asset lfs
 Assets/Huerto/Terreno/*.asset               lfs
 **/LightingData.asset                       lfs
 **/SampleTerrain.asset                      lfs

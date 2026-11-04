@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Terreno_Original.unity
-    guid: 85225cf463775612d94d3abccf8a8a23
-  - enabled: 1
-    path: Assets/Scenes/Entorno_Final.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/Scenes/Huerto.unity
+    path: Assets/Escenas/Huerto.unity
     guid: 14af8923b4cec820f8857c09de6ab55b
+  - enabled: 0
+    path: Assets/Escenas/Terreno_Original.unity
+    guid: 85225cf463775612d94d3abccf8a8a23
+  - enabled: 0
+    path: Assets/Escenas/Entorno_Final.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

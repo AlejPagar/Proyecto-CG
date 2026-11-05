@@ -1,7 +1,7 @@
-import sys, re, json, numpy as np
+import os, sys, re, json, numpy as np
 from PIL import Image
 S, P = sys.argv[1], sys.argv[2]
-X0, Y0, SIZE, RES = 236154.0, 4486437.0, 192.0, 1025
+X0, Y0, SIZE, RES = float(os.environ["HUERTO_X0"]), float(os.environ["HUERTO_Y0"]), 192.0, 1025
 im = Image.open(f"{S}/catastro/mdt_big.tif")
 dem = np.array(im).astype(np.float64)
 sx, sy = im.tag_v2[33550][:2]; tx, ty = im.tag_v2[33922][3:5]

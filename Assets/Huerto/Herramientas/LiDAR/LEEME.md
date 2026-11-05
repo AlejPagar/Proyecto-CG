@@ -15,4 +15,5 @@ Dependencias: `pip install "laspy[lazrs]" numpy pillow pyproj scipy opencv-pytho
 | `overlay.py` | Superpone la escena y las fotos para comparar |
 
 Los scripts esperan las rutas de entrada y salida como argumentos (ver el principio de cada uno).
+El origen UTM del huerto no se publica: `prep_huerto.py` y `lidar_extraer.py` lo leen de las variables de entorno `HUERTO_X0` y `HUERTO_Y0`. `lidar_extraer.py` recibe las teselas `.LAZ` como argumentos, y `overlay.py` el recuadro UTM de la ortofoto.
 Datos: LiDAR y MDT del IGN/PNOA (CC BY 4.0), cartografía de la Dirección General del Catastro, texturas de Poly Haven (CC0).

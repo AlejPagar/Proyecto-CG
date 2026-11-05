@@ -1,4 +1,4 @@
-# Detecta los escalones de los bancales (muros) dentro de la parcela 39 y los arboles reales (maximos de la altura de vegetacion)
+# Detecta los escalones de los bancales (muros) dentro de la parcela y los arboles reales (maximos de la altura de vegetacion)
 import sys, json, numpy as np
 from PIL import Image, ImageDraw
 S = sys.argv[1]

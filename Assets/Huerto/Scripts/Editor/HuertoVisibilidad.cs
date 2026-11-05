@@ -10,7 +10,7 @@ namespace Huerto
 {
     /// <summary>
     /// Cuenca visual del huerto: lanza rayos desde los puntos donde puede estar la camara del jugador
-    /// (dentro de la parcela 39 y hasta 5 m fuera de ella, a la altura de los ojos y de la camara en tercera persona)
+    /// (dentro de la parcela y hasta 5 m fuera de ella, a la altura de los ojos y de la camara en tercera persona)
     /// hacia cada casa, cada arbol y el suelo del pueblo. Lo que ningun rayo alcanza, ni su sombra, no se genera.
     /// Tapan la vista el terreno, las casas y los muros; los arboles no se cuentan como obstaculo (lado seguro).
     /// </summary>
@@ -189,7 +189,7 @@ namespace Huerto
 
             // ---- Guardar ----
             var sb = new StringBuilder();
-            sb.AppendLine($"# Cuenca visual desde la parcela 39 ({camaras.Count} puntos de camara, {rayos} rayos). Generado por Huerto/Calcular cuenca visual.");
+            sb.AppendLine($"# Cuenca visual desde el huerto ({camaras.Count} puntos de camara, {rayos} rayos). Generado por Huerto/Calcular cuenca visual.");
             int nE = 0, nA = 0, tE = 0, tA = 0;
             float x0 = float.MaxValue, z0 = float.MaxValue, x1 = float.MinValue, z1 = float.MinValue; int nS = 0;
             for (int i = 0; i < duenos.Count; i++)

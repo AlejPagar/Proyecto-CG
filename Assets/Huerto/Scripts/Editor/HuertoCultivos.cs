@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 namespace Huerto
 {
     /// <summary>
-    /// Bancales de cultivo del gemelo digital: siete bancales en los huecos libres de la parcela 39
+    /// Bancales de cultivo del gemelo digital: siete bancales en los huecos libres de la parcela
     /// (sin arboles, rocas ni muros encima), cada uno con su cultivo tipico de la sierra y un escenario de clima distinto.
     /// Genera tambien las mallas de las plantas por etapa, la tierra labrada, los carteles, la lluvia local y la tableta.
     /// </summary>

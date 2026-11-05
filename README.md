@@ -19,7 +19,7 @@ El terreno, los árboles y las casas del pueblo salen de datos abiertos (LiDAR d
 
 ## Características
 
-- **Escena a escala real**: parcela de 872 m² con su relieve, sus muros de piedra seca y sus objetos, rodeada por el pueblo y la sierra.
+- **Escena a escala real**: la parcela con su relieve, sus muros de piedra seca y sus objetos, rodeada por el pueblo y la sierra.
 - **Agricultor jugable** en tercera o primera persona: anda, corre, salta y se encarama a los muros.
 - **Siete bancales simulados**, cada uno con su cultivo y su propio escenario climático.
 - **Tableta dentro del juego** para consultar los bancales, regar, cosechar, plantar, cambiar el clima y exportar los resultados.
@@ -180,7 +180,7 @@ Los datos, las texturas y el audio ya están en el repositorio, así que estos s
 | Recurso | Origen | Licencia |
 |---|---|---|
 | LiDAR y modelos del terreno | IGN / PNOA | CC BY 4.0 |
-| Parcelas y edificios | Dirección General del Catastro | Según sus condiciones de uso |
+| Parcelas y edificios (geometría, con las referencias catastrales sustituidas por identificadores neutros) | Dirección General del Catastro | Según sus condiciones de uso |
 | Clima 1996-2025 | Open-Meteo (ERA5 / ERA5-Land) | CC BY 4.0 |
 | Texturas, HDRI, rocas y ramas | Poly Haven | CC0 |
 | Personaje, árboles, aperos, cestas, atrezo y cielos (`Assets/Terceros`) | Unity Asset Store | EULA de la Asset Store |

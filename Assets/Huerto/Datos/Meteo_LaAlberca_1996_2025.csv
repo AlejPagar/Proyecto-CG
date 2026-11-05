@@ -1,4 +1,4 @@
-# Datos diarios de Open-Meteo (reanalisis ERA5/ERA5-Land, CC BY 4.0) en 40.4876 N, 6.1119 W, 1060 m (huerto de La Alberca)
+# Datos diarios de Open-Meteo (reanalisis ERA5/ERA5-Land, CC BY 4.0) en el huerto de La Alberca, 1060 m
 fecha;tmax;tmin;lluvia_mm;et0_mm;radiacion_MJ;hr_pct;viento_kmh
 1996-01-01;9.9;4.4;18.1;0.69;4.39;90;31.8
 1996-01-02;8.7;2.6;0;1;8.42;87;10.7

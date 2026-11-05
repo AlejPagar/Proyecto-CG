@@ -305,8 +305,8 @@ namespace Huerto
                         hojas = Mathf.Max(hojas, (1f - Util.Smooth(r * 0.55f, r * 1.1f, d + (n2 - 0.5f) * 1.5f)) * (a.especie == "RobleSeco" ? 0.15f : 0.4f));
                     }
                     float verde = Util.Smooth(0.55f, 0.8f, n1) * 0.5f;
-                    bool dentro39 = wx > 84f && wx < 118f && wz > 65f && wz < 127f && Util.DentroPoligono(p, Datos.Parcela);
-                    if (dentro39)
+                    bool dentroHuerto = wx > 84f && wx < 118f && wz > 65f && wz < 127f && Util.DentroPoligono(p, Datos.Parcela);
+                    if (dentroHuerto)
                     {
                         if (Datos.EnPasillo(wx, wz)) verde += 0.35f;
                         float ds = Util.DistanciaPolilinea(p, senda, false);
@@ -352,12 +352,12 @@ namespace Huerto
                     int ax = Mathf.Min(ar - 1, (int)((x + 0.5f) / dr * ar)), az = Mathf.Min(ar - 1, (int)((z + 0.5f) / dr * ar));
                     float wSeca = mapa[az, ax, 0], wTierra = mapa[az, ax, 1], wVerde = mapa[az, ax, 3];
                     var p = new Vector2(wx, wz);
-                    bool dentro39 = wx > 84f && wx < 118f && wz > 65f && wz < 127f && Util.DentroPoligono(p, Datos.Parcela);
+                    bool dentroHuerto = wx > 84f && wx < 118f && wz > 65f && wz < 127f && Util.DentroPoligono(p, Datos.Parcela);
                     float cercaMuro = 99f;
                     if (wx > 82f && wx < 122f && wz > 62f && wz < 126f)
                         foreach (var m in Datos.Muros) cercaMuro = Mathf.Min(cercaMuro, Util.DistanciaPolilinea(p, m.puntos, false));
-                    float pc = dentro39 ? 0.05f : 0.18f;
-                    float pa = dentro39 ? 0.01f : 0.06f;
+                    float pc = dentroHuerto ? 0.05f : 0.18f;
+                    float pa = dentroHuerto ? 0.01f : 0.06f;
                     if (cercaMuro < 1.2f) { pa += 0.25f * (1f - cercaMuro / 1.2f); }
                     double r = rnd.NextDouble();
                     if (r < pc * wSeca) corta[z, x] = 1;

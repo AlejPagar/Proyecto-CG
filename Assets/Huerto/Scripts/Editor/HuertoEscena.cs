@@ -73,7 +73,7 @@ namespace Huerto
 
             // ---------- Jerarquia ----------
             var entorno = new GameObject("Entorno").transform;
-            var huertoGo = new GameObject("Huerto_Parcela39").transform;
+            var huertoGo = new GameObject("Huerto_Parcela").transform;
             var murosGo = new GameObject("Muros_Piedra_Seca").transform; murosGo.SetParent(huertoGo);
             var arbolesGo = new GameObject("Arboles").transform;
             var objetosGo = new GameObject("Objetos").transform; objetosGo.SetParent(huertoGo);

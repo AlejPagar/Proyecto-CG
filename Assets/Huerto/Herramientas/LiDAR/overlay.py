@@ -1,7 +1,7 @@
 import re,sys
 from PIL import Image, ImageDraw
 gml, orto, out = sys.argv[1:4]
-X0,Y0,X1,Y1 = 236148,4486462,236348,4486662
+X0,Y0,X1,Y1 = map(float, sys.argv[4:8])  # recuadro UTM de la ortofoto
 t=open(gml,encoding="latin-1").read()
 im=Image.open(orto).convert("RGB"); d=ImageDraw.Draw(im); W,H=im.size
 def px(x,y): return ((x-X0)/(X1-X0)*W, (Y1-y)/(Y1-Y0)*H)

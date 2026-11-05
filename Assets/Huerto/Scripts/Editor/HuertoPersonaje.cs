@@ -10,7 +10,7 @@ namespace Huerto
     /// <summary>
     /// Personaje jugable a escala real: hombre de 1,73 m (1,80 con el sombrero de paja), con camisa de lino remangada,
     /// pantalon de faena, cinturon y botas de cuero. Esqueleto de transforms (cadera, torso, cabeza, brazos y piernas)
-    /// que anima Juego.Paseante, y muros invisibles en el lindero de la parcela 39 para no salir del huerto.
+    /// que anima Juego.Paseante, y muros invisibles en el lindero de la parcela para no salir del huerto.
     /// </summary>
     public static class Personaje
     {
@@ -313,10 +313,10 @@ namespace Huerto
             return raiz;
         }
 
-        /// <summary>Muros invisibles sobre el lindero de la parcela 39 (capa Ignore Raycast: no frenan la camara).</summary>
+        /// <summary>Muros invisibles sobre el lindero de la parcela (capa Ignore Raycast: no frenan la camara).</summary>
         public static void Limites(Terrain t, Transform padre)
         {
-            var raiz = new GameObject("Limites_Parcela39").transform;
+            var raiz = new GameObject("Limites_Parcela").transform;
             raiz.SetParent(padre, false);
             var poli = Datos.Parcela;
             for (int i = 0; i < poli.Length; i++)

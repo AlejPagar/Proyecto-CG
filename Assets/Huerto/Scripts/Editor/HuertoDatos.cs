@@ -6,9 +6,9 @@ using UnityEngine;
 namespace Huerto
 {
     /// <summary>
-    /// Disposicion del huerto (parcela 39, poligono 12, La Alberca) reconstruida a partir de las fotos
+    /// Disposicion del huerto (La Alberca) reconstruida a partir de las fotos
     /// del 2 de agosto (de la casa ladera arriba) y de la cartografia de Catastro.
-    /// Coordenadas locales en metros: x = este, z = norte. Origen = UTM30N (236154, 4486437).
+    /// Coordenadas locales en metros: x = este, z = norte. El origen UTM no se publica.
     /// La altura de la escena es la altitud real menos 1040 m.
     /// </summary>
     public static class Datos
@@ -19,7 +19,7 @@ namespace Huerto
         public static float CieloExposicion = 1f;
         public const float Tam = 192f;
 
-        // Contorno de la parcela 37010A01200039 (872 m2)
+        // Contorno de la parcela
         public static readonly Vector2[] Parcela =
         {
             new Vector2(115.38f, 69.6f), new Vector2(113.54f, 66.94f), new Vector2(103.53f, 68.54f), new Vector2(93.12f, 69.75f),
